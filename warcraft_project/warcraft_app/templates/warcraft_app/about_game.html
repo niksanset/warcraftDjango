@@ -1,0 +1,26 @@
+{% extends 'warcraft_app/base.html' %}
+{% load static %}
+
+{% block title %}
+About game
+{% endblock title %}
+
+
+{% block content %}
+<div  class="book_list" style="position: absolute;left: 130px;top: 80px; background-color: rgb(54, 54, 54,0.80 );padding: 50px;border-radius: 50px;width: 1500px; height: 730px;">
+
+    <img src="{% static 'warcraft_app/img/about_img.jpg' %}" alt="" style="width: 25rem;border-radius: 10px;position: absolute;top: 100px;">
+    <p style="position: absolute; left: 450px; top: 20px; font-size: 40px;">{{ book.book_name}} </p>
+    <div style="position: relative;right: 370px;top: 360px;">
+      
+
+    </div>
+    <div style="width: 700px;position: absolute; left: 700px;top: 260px;">
+        <p>Warcraft 3: The Frozen Throne - это прямое продолжение ролевой стратегии Warcraft III: The Reign of Chaos, в котором игроки возвращаются в мир Азерота, в котором прошло буквально несколько месяцев со времен окончания предыдущей игры. Армия Пылающего Легиона была разбита, и жизнь всех рас начала налаживаться. Ночные эльфы вернулись в чащу Ашенвальского леса, потрепанная в битвах Орда обосновалась в холмах на востоке Калимдора, как и остатки людей. Артас же, ведомый зовом Ледяного Трона, намеревается бросить вызов всему миру, став Королем-Личем и обрушив всю свою ярость на остальные народы.</p>
+    </div>
+    
+
+   
+
+</div>
+{% endblock content %}

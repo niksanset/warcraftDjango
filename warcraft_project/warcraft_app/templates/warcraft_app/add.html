@@ -1,0 +1,24 @@
+{% extends 'warcraft_app/base.html' %}
+
+{% block title %}
+Добавить
+{% endblock title %}
+
+{% block content %}
+
+<div class="book_create"  style="position: absolute;left: 700px;top: 200px; background-color: rgb(54, 54, 54);padding: 40px;border-radius: 50px;">
+    <h1 style="padding-bottom: 30px;">Image</h1>
+    <button><a href="{% url "image_create" %}" style="text-decoration: none;color: black;">Image create</a></button>
+    <h1 style="padding-bottom: 30px;">Audio</h1>
+    <button><a href="{% url "audio_create" %}" style="text-decoration: none;color: black;">Audio create</a></button>
+    <h1 style="padding-bottom: 30px;">Video</h1>
+    <button><a href="{% url "video_create" %}" style="text-decoration: none;color: black;">Video create</a></button>
+    
+    
+
+
+
+</div>
+
+   
+{% endblock content %}

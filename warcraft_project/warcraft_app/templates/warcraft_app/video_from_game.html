@@ -1,0 +1,28 @@
+{% extends 'warcraft_app/base.html' %}
+
+{% block title %}
+Video
+{% endblock title %}
+
+{% block content %}
+{% for video in video_list %}
+<div style="display: flex;padding: 50px;">
+    <div class="card" style="width: 40rem;">
+        {% if video.video %}
+            <video  controls>
+                <source src="{{ video.video }}" type="video/mp4">
+            </video>
+        {% endif %}
+       
+      </div>
+
+</div>
+
+
+{% endfor %}
+
+
+
+
+   
+{% endblock content %}
